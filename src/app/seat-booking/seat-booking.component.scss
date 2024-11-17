@@ -1,0 +1,42 @@
+.container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .booking {
+    margin-bottom: 20px;
+  }
+  
+  .coach {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .available {
+    background-color: #a8ffb5;
+  }
+  
+  .booked {
+    background-color: #ffa8a8;
+    text-decoration: line-through;
+  }
+  

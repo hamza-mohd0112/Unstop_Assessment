@@ -1,0 +1,21 @@
+<!-- <p>seat-booking works!</p> -->
+<div class="container">
+    <h1>Train Seat Reservation System</h1>
+  
+    <!-- Booking Section -->
+    <div class="booking">
+      <label for="seats">Number of Seats to Book:</label>
+      <input id="seats" type="number" #seatInput min="1" max="7" />
+      <button (click)="bookSeats(seatInput.value)">Book Seats</button>
+    </div>
+  
+    <!-- Seat Visualization -->
+    <div class="coach">
+        <div class="row" *ngFor="let row of rows">
+          <div class="seat" *ngFor="let seat of filteredSeatsByRow[row]" [ngClass]="{'booked': seat.status === 'booked', 'available': seat.status === 'available'}">
+            {{ seat.id }}
+          </div>
+        </div>
+    </div>
+  </div>
+  
